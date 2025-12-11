@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD de Livros e Autores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CRUD de Livros e Autores</h1>
+
+  <section>
+    <h2>Cadastrar Autor</h2>
+    <input id="author-name" placeholder="Nome">
+    <input id="author-birthdate" type="date" placeholder="Data de nascimento">
+    <input id="author-nationality" placeholder="Nacionalidade">
+    <button onclick="addAuthor()">Cadastrar Autor</button>
+  </section>
+
+  <section>
+    <h2>Cadastrar Livro</h2>
+    <input id="book-title" placeholder="Título">
+    <select id="book-author"></select>
+    <input id="book-year" type="number" placeholder="Ano de publicação">
+    <input id="book-genre" placeholder="Gênero">
+    <input id="book-isbn" placeholder="ISBN">
+    <button onclick="addBook()">Cadastrar Livro</button>
+  </section>
+
+  <section>
+    <h2>Autores Cadastrados</h2>
+    <div id="authors-list"></div>
+    <button id="author-prev" onclick="prevAuthorPage()">Anterior</button>
+    <span id="author-page-info"></span>
+    <button id="author-next" onclick="nextAuthorPage()">Próxima</button>
+  </section>
+
+  <section>
+    <h2>Livros Cadastrados</h2>
+    <div id="books-list"></div>
+    <button id="book-prev" onclick="prevBookPage()">Anterior</button>
+    <span id="book-page-info"></span>
+    <button id="book-next" onclick="nextBookPage()">Próxima</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

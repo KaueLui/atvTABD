@@ -1,0 +1,32 @@
+body { 
+  font-family: Arial; 
+  padding: 20px; 
+}
+
+section { 
+  margin-bottom: 40px; 
+}
+
+input, select { 
+  margin: 5px 0; 
+  padding: 6px; 
+  width: 250px; 
+  display: block; 
+}
+
+button { 
+  padding: 8px 12px; 
+  margin-top: 5px; 
+  cursor: pointer; 
+}
+
+button:disabled { 
+  opacity: 0.5; 
+  cursor: not-allowed; 
+}
+
+.card { 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  margin: 5px 0; 
+}
